@@ -10,6 +10,6 @@ setup(
     author_email='nick.kelly@tivix.com',
     url='http://github.com/nickatnight/dj-spam.git',
     description='Redirecting bots to utilize their time better...',
-    keywords='dj spam'
+    keywords='dj spam',
     py_modules=['dj_spam'],
 )
