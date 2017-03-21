@@ -7,6 +7,6 @@ try:
 except Exception:
     raise 'You have not defined any SPAM_URLS in your settings.'
 try:
-    getattr(settings SPAM_ROUTES)
+    getattr(settings, SPAM_ROUTES)
 except:
     raise 'You have not defined any SPAM_ROUTES in your settings.'
