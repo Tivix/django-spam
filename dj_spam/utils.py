@@ -24,3 +24,5 @@ class ColorMe(object):
             return cls.OKGREEN + txt + cls.ENDC
         elif status == 'warn':
             return cls.WARNING + txt + cls.ENDC
+        else:
+            return text

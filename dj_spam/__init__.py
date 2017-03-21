@@ -10,7 +10,7 @@ except:
     raise AttributeError(ColorMe.color_text('You have not defined any SPAM_URLS in your settings.', 'fail'))
 
 if len(spam_urls) == 0:
-    raise ValueError(ColorMe.color_text('You have not added any urls for spam bots to get redirected to...please add some.'))
+    raise ValueError(ColorMe.color_text('You have not added any urls for spam bots to get redirected to...please add some.', 'warn'))
 
 
 try:
