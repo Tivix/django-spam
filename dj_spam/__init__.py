@@ -5,8 +5,9 @@ from django.conf import settings
 try:
     getattr(settings, SPAM_URLS)
 except Exception:
-    raise 'You have not defined any SPAM_URLS in your settings.'
+    raise ValueError('You have not defined any SPAM_URLS in your settings.')
+
 try:
     getattr(settings, SPAM_ROUTES)
 except:
-    raise 'You have not defined any SPAM_ROUTES in your settings.'
+    raise ValueError('You have not defined any SPAM_ROUTES in your settings.')
