@@ -1,5 +1,9 @@
-dj-spam
+dj_spam
 =======
+
+We all hate bots, lets admit it. Especially the ones that try to gain access to our most secret endpoints. Well we have an easy
+solution for your django application. dj_spam simply allows you to add redirect links to whatever endpoints you choose. We've included
+some special ones, 10 hours of special....
 
 Add to apps list:
 
