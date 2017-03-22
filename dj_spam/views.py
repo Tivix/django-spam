@@ -2,8 +2,8 @@ import random
 
 from django.shortcuts import render, redirect
 
-from django.conf import settings
+from dj_spam import SPAM_URLS
 
 
 def tickle_me_pink(request):
-    return redirect(random.choice(settings.SPAM_URLS))
+    return redirect(random.choice(SPAM_URLS))
