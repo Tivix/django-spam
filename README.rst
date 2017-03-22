@@ -5,6 +5,12 @@ We all hate bots, lets admit it. Especially the ones that try to gain access to 
 solution for your django application. dj_spam simply allows you to add redirect links to whatever endpoints you choose. We've included
 some special ones, 10 hours of special....
 
+For now, add this line to your requirements.txt file:
+
+.. code:: python
+
+   -e git+http://github.com/nickatnight/dj-spam.git#egg=dj-spam
+
 Add to apps list:
 
 .. code:: python
@@ -15,7 +21,9 @@ Add to apps list:
        '...'
    ]
 
-Add typical bot spam routes:
+dj_spam ships with some default endpoints bots might try to hit. If you like to add extra routes, simply add
+a ``SPAM_ROUTES`` variable to your settings file that contains a list of extra endpoints you would like
+to add.
 
 .. code:: python
 
@@ -27,7 +35,7 @@ Add typical bot spam routes:
        '...',
    ]
 
-Add some fun urls:
+The same goes for ``SPAM_URLS`` you would like traffic to get forwarded to. Add some fun urls:
 
 .. code:: python
 
@@ -46,4 +54,4 @@ Include ``dj_spam.urls`` to root url file:
    (r'^', include(spampatterns)),
    '...',
 
-@tivix
+@Tivix
