@@ -2,7 +2,7 @@
 
 class ColorMe(object):
     """
-    Color output in terminal so warning stick out.
+    Color output in terminal so warnings/errors stick out.
     """
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -25,4 +25,4 @@ class ColorMe(object):
         elif status == 'warn':
             return cls.WARNING + txt + cls.ENDC
         else:
-            return text
+            return txt
