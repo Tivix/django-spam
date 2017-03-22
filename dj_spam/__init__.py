@@ -3,15 +3,36 @@ from django.conf import settings
 
 # common endpoints bots like
 SPAM_ROUTES = [
+    # asp/x
+    'admin.aspx',
+    'admin.asp',
+    'admin/login.asp',
+    'admin_login.asp',
+    'admin_login.aspx',
+    'administartorlogin.aspx',
+    'administrator_login.asp',
+    'administrator_login.aspx',
+    'login/administrator.aspx',
+    'login/admin.asp',
+    # php
     'admin.php',
     'admin/login.php',
+    'admin_area/index.php',
     'administrator/index.php',
     'index.php',
+    'siteadmin/index.php',
+    'siteadmin/login.php',
     'wp-admin/admin-ajax.php',
     'wp-admin/post-new.php',
     'wp-admin/options-link.php',
     'wp-admin/includes/themes.php',
-    'wp-login.php'
+    'wp-login.php',
+    # html
+    'admin/account.html',
+    'admin/admin.html',
+    'admin/index.html',
+    'admin/login.html',
+
 ]
 
 # '10 hours of'...
@@ -25,7 +46,13 @@ SPAM_URLS = [
     # all star windows xp remix
     'https://www.youtube.com/watch?v=bKf9_gF5h5I',
     # aint nobody got time for that
-    'https://www.youtube.com/watch?v=Kp9soHooisk'
+    'https://www.youtube.com/watch?v=Kp9soHooisk',
+    # yodelling
+    'https://www.youtube.com/watch?v=Lxt0_YrQs0M',
+    # whistling mullet guy
+    'https://www.youtube.com/watch?v=Sbhoym9yzVQ',
+    # screaming guy
+    'https://www.youtube.com/watch?v=CRcYlE3i_-4'
 ]
 
 # check if any settings vars have been included to add to the
