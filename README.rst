@@ -2,8 +2,8 @@ dj_spam
 =======
 
 We all hate bots, lets admit it. Especially the ones that try to gain access to our most secret endpoints. Well we have an easy
-solution for your django application. dj_spam simply allows you to add redirect links to whatever endpoints you choose. We've included
-some special ones, 10 hours of special....
+solution for your django application. dj_spam simply adds common admin urls to url conf so when bots (or human
+for that matter) try and access them, they will get redirected...
 
 For now, add this line to your requirements.txt file:
 
@@ -21,9 +21,9 @@ Add to apps list:
        '...'
    ]
 
-dj_spam ships with some default endpoints bots might try to hit. If you like to add extra routes, simply add
+dj_spam ships with some default endpoints bots might try to hit. If you would like to add extra routes, simply add
 a ``SPAM_ROUTES`` variable to your settings file that contains a list of extra endpoints you would like
-to add.
+to add. *no leading slashes*
 
 .. code:: python
 
@@ -40,8 +40,10 @@ The same goes for ``SPAM_URLS`` you would like traffic to get forwarded to. Add 
 .. code:: python
 
    SPAM_URLS = [
+       # 10 hours of Donald Trump saying bing bing bong
        'https://www.youtube.com/watch?v=UKbOqEk6rsk',
-       'https://www.youtube.com/watch?v=8ZcmTl_1ER8',
+       # 10 hours of Darth Vader breathing
+       'https://www.youtube.com/watch?v=un8FAjXWOBY',
        '...',
    ]
 
@@ -52,5 +54,16 @@ Include ``dj_spam.urls`` to root url file:
    '...'
    (r'', include('dj_spam.urls')),
    '...',
+
+
+If for some odd reason you need to exclude routes, define ``EXCLUDED_ROUTES`` in settings. *no leading slashes*
+
+.. code:: python
+
+   EXCLUDED_ROUTES = [
+       'admin.php',
+       'index.php'
+   ]
+
 
 @Tivix
