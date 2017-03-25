@@ -1,6 +1,7 @@
+# utils.py
 
 
-class ColorMe(object):
+class Colour(object):
     """
     Color output in terminal so warnings/errors stick out.
     """
@@ -17,7 +18,16 @@ class ColorMe(object):
         raise NotImplementedError
 
     @classmethod
-    def color_text(cls, txt, status):
+    def text(cls, txt, status):
+        """
+        Colorize specific text
+
+        @txt:       text printed to console
+        @status:    the type of status depends on the color
+
+        returns:
+            colorized text string
+        """
         if status == 'fail':
             return cls.FAIL + txt + cls.ENDC
         elif status == 'ok':

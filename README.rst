@@ -49,9 +49,8 @@ Include ``dj_spam.urls`` to root url file:
 
 .. code:: python
 
-   from dj_spam.urls import urlpatterns as spampatterns
    '...'
-   (r'^', include(spampatterns)),
+   (r'', include('dj_spam.urls')),
    '...',
 
 @Tivix
