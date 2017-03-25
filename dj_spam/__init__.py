@@ -1,11 +1,14 @@
 from django.conf import settings
 
+from dj_spam.utils import Colour
 
-# common endpoints bots like
+
+# common endpoints bots like (w/o leading slash)
 SPAM_ROUTES = [
     # asp/x
     'admin.aspx',
     'admin.asp',
+    'admin/account.html',
     'admin/login.asp',
     'admin_login.asp',
     'admin_login.aspx',
@@ -59,6 +62,16 @@ SPAM_URLS = [
 # list of routes or urls
 if hasattr(settings, 'SPAM_ROUTES'):
     SPAM_ROUTES += settings.SPAM_ROUTES
+
+
+# check for excluded routes
+if hasattr(settings, 'EXCLUDED_ROUTES'):
+    for route in settings.EXCLUDED_ROUTES:
+        if route in SPAM_ROUTES:
+            SPAM_ROUTES.remove(route)
+        else:
+            print Colour.text('Warning: "'+ route +'" is not included in dj_spam.SPAM_ROUTES.', 'warn')
+
 
 if hasattr(settings, 'SPAM_URLS'):
     SPAM_URLS += settings.SPAM_URLS

@@ -1,6 +1,7 @@
 import warnings
 import random
 
+from django.conf import settings
 from django.test import TestCase, override_settings
 
 from dj_spam import SPAM_ROUTES
