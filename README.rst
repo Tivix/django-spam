@@ -1,6 +1,8 @@
 dj_spam
 =======
 
+.. image:: https://media.giphy.com/media/Mr8Gr9ejR0OpW/giphy.gif
+
 We all hate bots, lets admit it. Especially the ones that try to gain access to our most secret endpoints. Well we have an easy
 solution for your django application. dj_spam simply adds common admin urls to url conf so when bots (or human
 for that matter) try and access them, they will get redirected...
