@@ -23,7 +23,7 @@ Add to apps list:
 
 dj_spam ships with some default endpoints bots might try to hit. If you like to add extra routes, simply add
 a ``SPAM_ROUTES`` variable to your settings file that contains a list of extra endpoints you would like
-to add.
+to add. *no leading slashes*
 
 .. code:: python
 
@@ -52,5 +52,16 @@ Include ``dj_spam.urls`` to root url file:
    '...'
    (r'', include('dj_spam.urls')),
    '...',
+
+
+If for some odd reason you need to exclude routes, define ``EXCLUDED_ROUTES`` in settings. *no leading slashes*
+
+.. code:: python
+
+   EXCLUDED_ROUTES = [
+       'admin.php',
+       'index.php'
+   ]
+
 
 @Tivix
