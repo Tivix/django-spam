@@ -1,6 +1,6 @@
 from django.conf import settings
 
-from dj_spam.utils import Colour
+from django_spam.utils import Colour
 
 
 # common endpoints bots like (w/o leading slash)
@@ -70,7 +70,7 @@ if hasattr(settings, 'EXCLUDED_ROUTES'):
         if route in SPAM_ROUTES:
             SPAM_ROUTES.remove(route)
         else:
-            print Colour.text('Warning: "'+ route +'" is not included in dj_spam.SPAM_ROUTES.', 'warn')
+            print Colour.text('Warning: "'+ route +'" is not included in django_spam.SPAM_ROUTES.', 'warn')
 
 
 if hasattr(settings, 'SPAM_URLS'):

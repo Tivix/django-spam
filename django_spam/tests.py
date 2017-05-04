@@ -4,7 +4,7 @@ import random
 from django.conf import settings
 from django.test import TestCase, override_settings
 
-from dj_spam import SPAM_ROUTES
+from django_spam import SPAM_ROUTES
 
 
 class SimpleTestCase(TestCase):
