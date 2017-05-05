@@ -1,4 +1,4 @@
-dj_spam
+django_spam
 =======
 
 .. image:: https://media.giphy.com/media/Mr8Gr9ejR0OpW/giphy.gif
@@ -6,7 +6,7 @@ dj_spam
 Inspired by this Nick Craver tweet https://twitter.com/nick_craver/status/720062942960623616
 
 We all hate bots, lets admit it. Especially the ones that try to gain access to our most secret endpoints. Well we have an easy
-solution for your django application. dj_spam simply adds common admin urls to url conf so when bots (or human
+solution for your django application. django_spam simply adds common admin urls to url conf so when bots (or human
 for that matter) try and access them, they will get redirected...
 
 For now, add this line to your requirements.txt file:
@@ -21,11 +21,11 @@ Add to apps list:
 
    INSTALLED_APPS = [
        '...',
-       'dj_spam',
+       'django_spam',
        '...'
    ]
 
-dj_spam ships with some default endpoints bots might try to hit. If you would like to add extra routes, simply add
+django_spam ships with some default endpoints bots might try to hit. If you would like to add extra routes, simply add
 a ``SPAM_ROUTES`` variable to your settings file that contains a list of extra endpoints you would like
 to add. *no leading slashes*
 
@@ -51,12 +51,12 @@ The same goes for ``SPAM_URLS`` you would like traffic to get forwarded to. Add 
        '...',
    ]
 
-Include ``dj_spam.urls`` to root url file:
+Include ``django_spam.urls`` to root url file:
 
 .. code:: python
 
    '...'
-   (r'', include('dj_spam.urls')),
+   (r'', include('django_spam.urls')),
    '...',
 
 
