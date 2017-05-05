@@ -3,6 +3,8 @@ django_spam
 
 .. image:: https://media.giphy.com/media/Mr8Gr9ejR0OpW/giphy.gif
 
+Inspired by this Nick Craver tweet https://twitter.com/nick_craver/status/720062942960623616
+
 We all hate bots, lets admit it. Especially the ones that try to gain access to our most secret endpoints. Well we have an easy
 solution for your django application. django_spam simply adds common admin urls to url conf so when bots (or human
 for that matter) try and access them, they will get redirected...
@@ -11,7 +13,7 @@ For now, add this line to your requirements.txt file:
 
 .. code:: python
 
-   pip install django-spam
+   -e git+http://github.com/tivix/django-spam.git#egg=django-spam
 
 Add to apps list:
 
