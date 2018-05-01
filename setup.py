@@ -30,8 +30,9 @@ setup(
     zip_safe=False,
     include_package_data=True,
     py_modules=['django_spam'],
+    test_suite='runtests.runtests',
     install_requires=[
-        'Django>=1.8.0',
+        'Django>=1.11.0',
     ],
     classifiers=[
         'Framework :: Django',

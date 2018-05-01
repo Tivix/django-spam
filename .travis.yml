@@ -1,0 +1,30 @@
+language: python
+python:
+  - 2.7
+  # - 3.4
+  # - 3.5
+  # - 3.6
+env:
+  # - DJANGO_RELEASE='Django>=1.7,<1.8'
+  # - DJANGO_RELEASE='Django>=1.8,<1.9'
+  # - DJANGO_RELEASE='Django>=1.9,<1.10'
+  # - DJANGO_RELEASE='Django>=1.10,<1.11'
+  - DJANGO_RELEASE='Django>=1.11,<1.12'
+matrix:
+  exclude:
+    # These older Django versions don't support Python 3.5+
+    - python: 3.5
+      env: DJANGO_RELEASE='Django>=1.7,<1.8'
+    - python: 3.6
+      env: DJANGO_RELEASE='Django>=1.7,<1.8'
+install:
+  - pip install "$DJANGO_RELEASE"
+  - pip install coveralls
+  # - pip install -r requirements/dev.txt
+script:
+  - coverage run --source=django_spam setup.py test
+# script:
+#   - flake8 td_biblio/
+#   - PYTHONPATH=$(pwd) DATABASE_URL="sqlite:///:memory:" py.test
+# after_success:
+#   coveralls
