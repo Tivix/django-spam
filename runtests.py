@@ -1,14 +1,23 @@
+# This file mainly exists to allow python setup.py test to work.
 import os
 import sys
 
-import django
-from django.conf import settings
-from django.test.utils import get_runner
+os.environ['DJANGO_SETTINGS_MODULE'] = 'tests.settings'
+test_dir = os.path.join(os.path.dirname(__file__), 'tests')
+sys.path.insert(0, test_dir)
 
-if __name__ == "__main__":
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'tests.test_settings'
-    django.setup()
+import django
+from django.test.utils import get_runner
+from django.conf import settings
+
+
+def runtests():
     TestRunner = get_runner(settings)
-    test_runner = TestRunner()
-    failures = test_runner.run_tests(["tests"])
+    test_runner = TestRunner(verbosity=1, interactive=True)
+    if hasattr(django, 'setup'):
+        django.setup()
+    failures = test_runner.run_tests(['test_spam'])
     sys.exit(bool(failures))
+
+if __name__ == '__main__':
+    runtests()

@@ -15,7 +15,7 @@ import os
 
 
 here = os.path.dirname(os.path.abspath(__file__))
-f = open(os.path.join(here,  'README.rst'))
+f = open(os.path.join(here,  'README.md'))
 long_description = f.read().strip()
 f.close()
 
@@ -34,7 +34,7 @@ setup(
     py_modules=['django_spam'],
     test_suite='runtests.runtests',
     install_requires=[
-        'Django>=1.11.0',
+        'Django>=1.8.0,<2.0',
     ],
     classifiers=[
         'Framework :: Django',
