@@ -2,7 +2,7 @@
 import os
 import sys
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'tests.test_settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'tests.settings'
 test_dir = os.path.join(os.path.dirname(__file__), 'tests')
 sys.path.insert(0, test_dir)
 
@@ -16,7 +16,7 @@ def runtests():
     test_runner = TestRunner(verbosity=1, interactive=True)
     if hasattr(django, 'setup'):
         django.setup()
-    failures = test_runner.run_tests(['tests'])
+    failures = test_runner.run_tests(['test_spam'])
     sys.exit(bool(failures))
 
 if __name__ == '__main__':
