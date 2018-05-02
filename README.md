@@ -13,9 +13,9 @@ for that matter) try and access them, they will get redirected...
 [![Build Status](https://travis-ci.org/Tivix/django-spam.svg?branch=master)](https://travis-ci.org/Tivix/django-spam)
 
 
-|            | Django 1.7         | Django 1.8         | Django 1.10        | Django 1.11        |
-| --         | --                 | --                 | --                 | --                 |
-| Python 2.7 |                    | :heavy_check_mark: |                    | :heavy_check_mark: |
+|            | Django 1.8         | Django 1.9         | Django 1.10        | Django 1.11        |
+| --         | --                 | --                 | --                 |                    |
+| Python 2.7 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Python 3.4 |                    |                    |                    |                    |
 | Python 3.5 |                    |                    |                    |                    |
 | Python 3.6 |                    |                    |                    |                    |
