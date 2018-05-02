@@ -18,6 +18,9 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+demo/django_spam
+
+*.sqlite3
 
 # Installer logs
 pip-log.txt
