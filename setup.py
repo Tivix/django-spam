@@ -9,6 +9,8 @@ except ImportError:
     use_setuptools()
     from setuptools import setup, find_packages
     from setuptools.command.test import test
+
+
 import os
 
 
@@ -19,8 +21,8 @@ f.close()
 
 setup(
     name='django_spam',
-    version='0.1.0',
-    author='tivix',
+    version='0.2.0',
+    author='Nick Kelly',
     author_email='nick.kelly@tivix.com',
     url='http://github.com/Tivix/django-spam',
     description='Redirecting bots to utilize their time better...',

@@ -10,7 +10,7 @@ solution for your django application. django_spam simply adds common admin urls 
 for that matter) try and access them, they will get redirected...
 
 
-[![CircleCI](https://circleci.com/gh/Tivix/django-spam.svg?style=svg)](https://circleci.com/gh/Tivix/django-spam)
+[![Build Status](https://travis-ci.org/Tivix/django-spam.svg?branch=master)](https://travis-ci.org/Tivix/django-spam)
 
 
 |            | Django 1.7         | ... | Django 1.10        | Django 1.11        |
@@ -63,7 +63,7 @@ Include ``django_spam.urls`` to root url file:
 ```python
 
 '...'
-(r'', include('django_spam.urls')),
+url(r'', include('django_spam.urls')),
 '...',
 ```
 
