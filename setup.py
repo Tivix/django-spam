@@ -34,7 +34,7 @@ setup(
     py_modules=['django_spam'],
     test_suite='runtests.runtests',
     install_requires=[
-        'Django>=1.11.0',
+        'Django>=1.11.0,<2.0',
     ],
     classifiers=[
         'Framework :: Django',
