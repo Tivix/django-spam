@@ -31,6 +31,10 @@ SPAM_ROUTES = [
     'testadmin.php',
 ]
 
+EXCLUDED_ROUTES = [
+    'index.php',
+]
+
 DEBUG = True
 
 STATIC_URL = '/static/'
