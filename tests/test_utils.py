@@ -24,3 +24,7 @@ class DjangoSpamUtilsTestCase(TestCase):
     def test_no_status_text(self):
         warn_text = Colour.text('Warn text.')  # pylint: disable=no-value-for-parameter
         self.assertIn('Warn text.', warn_text)
+
+    def test_not_implemented_error(self):
+        with self.assertRaises(NotImplementedError):
+            Colour()
