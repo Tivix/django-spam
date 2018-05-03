@@ -1,0 +1,23 @@
+language: python
+python:
+  - 2.7
+  # - 3.4
+  # - 3.5
+  # - 3.6
+env:
+  - DJANGO=1.8.*
+  - DJANGO=1.9.*
+  - DJANGO=1.10.*
+  - DJANGO=1.11.*
+matrix:
+  exclude:
+    - python: 2.7
+      env: DJANGO=2.0.*
+install:
+  - pip install -q Django==$DJANGO
+  - pip install coveralls
+  # - pip install -r requirements/dev.txt
+script:
+  - coverage run --source=django_spam setup.py test
+after_success:
+  - coveralls

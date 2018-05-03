@@ -9,18 +9,20 @@ except ImportError:
     use_setuptools()
     from setuptools import setup, find_packages
     from setuptools.command.test import test
+
+
 import os
 
 
 here = os.path.dirname(os.path.abspath(__file__))
-f = open(os.path.join(here,  'README.rst'))
+f = open(os.path.join(here,  'README.md'))
 long_description = f.read().strip()
 f.close()
 
 setup(
     name='django_spam',
-    version='0.1.0',
-    author='tivix',
+    version='0.2.0',
+    author='Nick Kelly',
     author_email='nick.kelly@tivix.com',
     url='http://github.com/Tivix/django-spam',
     description='Redirecting bots to utilize their time better...',
@@ -30,8 +32,9 @@ setup(
     zip_safe=False,
     include_package_data=True,
     py_modules=['django_spam'],
+    test_suite='runtests.runtests',
     install_requires=[
-        'Django>=1.8.0',
+        'Django>=1.8.0,<2.0',
     ],
     classifiers=[
         'Framework :: Django',

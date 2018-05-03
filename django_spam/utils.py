@@ -18,7 +18,7 @@ class Colour(object):
         raise NotImplementedError
 
     @classmethod
-    def text(cls, txt, status):
+    def text(cls, txt, status=None):
         """
         Colorize specific text
 
