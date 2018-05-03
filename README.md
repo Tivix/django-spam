@@ -17,9 +17,9 @@ for that matter) try and access them, they will get redirected...
 |            | Django 1.8         | Django 1.9         | Django 1.10        | Django 1.11        |
 | --         | --                 | --                 | --                 | --                 |
 | Python 2.7 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Python 3.4 |                    |                    |                    |                    |
-| Python 3.5 |                    |                    |                    |                    |
-| Python 3.6 |                    |                    |                    |                    |
+| Python 3.4 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.5 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.6 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 To install:
 ```python
