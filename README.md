@@ -1,5 +1,5 @@
 django_spam
-=======
+===========
 
 ![alt text](https://media.giphy.com/media/Mr8Gr9ejR0OpW/giphy.gif "django_spam")
 
@@ -10,7 +10,8 @@ solution for your django application. django_spam simply adds common admin urls 
 for that matter) try and access them, they will get redirected...
 
 
-[![Build Status](https://travis-ci.org/Tivix/django-spam.svg?branch=master)](https://travis-ci.org/Tivix/django-spam)
+[![Build Status](https://travis-ci.org/nickatnight/django-spam.svg?branch=master)](https://travis-ci.org/nickatnight/django-spam)
+[![Coverage Status](https://coveralls.io/repos/github/nickatnight/django-spam/badge.svg?branch=master)](https://coveralls.io/github/nickatnight/django-spam?branch=master)
 
 
 |            | Django 1.8         | Django 1.9         | Django 1.10        | Django 1.11        |
