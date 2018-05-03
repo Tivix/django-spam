@@ -26,7 +26,7 @@ setup(
     author_email='nick.kelly@tivix.com',
     url='http://github.com/Tivix/django-spam',
     description='Redirecting bots to utilize their time better...',
-    packages=find_packages(),
+    packages=find_packages(exclude=('test*',)),
     long_description=long_description,
     keywords='django spam',
     zip_safe=False,
