@@ -1,6 +1,16 @@
 import random
-import StringIO
 import sys
+
+try:
+    from StringIO import StringIO  # Python 2.7
+except ImportError:
+    from io import StringIO  # Python 3+
+
+try:
+    reload  # Python 2.7
+except NameError:
+    from importlib import reload  # Python 3.4+
+
 
 from django.conf import settings
 from django.test import TestCase, override_settings
@@ -26,7 +36,7 @@ class DjangoSpamTestCase(TestCase):
     @override_settings(EXCLUDED_ROUTES=['notinlist.html',])
     def test_excluded_routes_contains_non_existent_spam_route(self):
         # create string object, redirect to stdout, reload package, then reset redirect
-        capturedOutput = StringIO.StringIO()
+        capturedOutput = StringIO()
         sys.stdout = capturedOutput
         import django_spam
         reload(django_spam)
