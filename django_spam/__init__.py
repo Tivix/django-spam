@@ -17,6 +17,7 @@ SPAM_ROUTES = [
     'administrator_login.aspx',
     'login/administrator.aspx',
     'login/admin.asp',
+
     # php
     'admin.php',
     'admin/login.php',
@@ -30,12 +31,12 @@ SPAM_ROUTES = [
     'wp-admin/options-link.php',
     'wp-admin/includes/themes.php',
     'wp-login.php',
+
     # html
     'admin/account.html',
     'admin/admin.html',
     'admin/index.html',
-    'admin/login.html',
-
+    'admin/login.html'
 ]
 
 # '10 hours of'...
@@ -55,7 +56,15 @@ SPAM_URLS = [
     # whistling mullet guy
     'https://www.youtube.com/watch?v=Sbhoym9yzVQ',
     # screaming guy
-    'https://www.youtube.com/watch?v=CRcYlE3i_-4'
+    'https://www.youtube.com/watch?v=CRcYlE3i_-4',
+    # diggy diggy hole
+    'https://www.youtube.com/watch?v=ov5pxaIbJlM',
+    # awesome face song
+    'https://www.youtube.com/watch?v=WNeni1lbzgY',
+    # screaming sheep
+    'https://www.youtube.com/watch?v=SjHUb7NSrNk',
+    # epic sax guy
+    'https://www.youtube.com/watch?v=kxopViU98Xo'
 ]
 
 # check if any settings vars have been included to add to the

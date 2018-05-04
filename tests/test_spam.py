@@ -2,17 +2,15 @@ import random
 import sys
 
 try:
-    from StringIO import StringIO # Python 2.7
+    from StringIO import StringIO  # Python 2.7
 except ImportError:
-    from io import StringIO # Python 3+
+    from io import StringIO  # Python 3+
 
 try:
     reload  # Python 2.7
 except NameError:
-    try:
-        from importlib import reload  # Python 3.4+
-    except ImportError:
-        from imp import reload  # Python 3.0 - 3.3
+    from importlib import reload  # Python 3.4+
+
 
 from django.conf import settings
 from django.test import TestCase, override_settings
