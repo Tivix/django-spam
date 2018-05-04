@@ -64,7 +64,7 @@ Include ``django_spam.urls`` to root url file:
 ```python
 
 '...'
-url(r'', include('django_spam.urls')),
+url(r'', include('django_spam.urls')),  # use 'path' instead of 'url' for Django >= 2.0
 '...',
 ```
 
