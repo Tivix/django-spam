@@ -14,12 +14,12 @@ for that matter) try and access them, they will get redirected...
 [![Coverage Status](https://coveralls.io/repos/github/nickatnight/django-spam/badge.svg?branch=master)](https://coveralls.io/github/nickatnight/django-spam?branch=master)
 
 
-|            | Django 1.8         | Django 1.9         | Django 1.10        | Django 1.11        |
-| --         | --                 | --                 | --                 | --                 |
-| Python 2.7 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Python 3.4 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Python 3.5 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Python 3.6 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+|            | Django 1.8         | Django 1.9         | Django 1.10        | Django 1.11        | Django 2.0         |
+| --         | --                 | --                 | --                 | --                 | --                 |
+| Python 2.7 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.4 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.5 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.6 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 To install:
 ```python
