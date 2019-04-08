@@ -25,7 +25,7 @@ matrix:
     - python: 3.4
       env: DJANGO=2.2
 install:
-  - pip install --upgrade pysqlite
+  - pip install --upgrade pysqlite3
   - pip install -q Django==$DJANGO
   - pip install coveralls
   # - pip install -r requirements/dev.txt
