@@ -21,7 +21,7 @@ f.close()
 
 setup(
     name='django_spam',
-    version='0.4.0',
+    version='0.4.1',
     author='Nick Kelly',
     author_email='nick.kelly@tivix.com',
     url='http://github.com/Tivix/django-spam',
