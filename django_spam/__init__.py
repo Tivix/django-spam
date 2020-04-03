@@ -41,30 +41,26 @@ SPAM_ROUTES = [
 
 # '10 hours of'...
 SPAM_URLS = [
-    # donald trump saying bing bing bong
-    'https://www.youtube.com/watch?v=UKbOqEk6rsk',
     # darth vader breathing
     'https://www.youtube.com/watch?v=un8FAjXWOBY',
-    # donald trump noises
-    'https://www.youtube.com/watch?v=GQPO4nmFkCI',
-    # all star windows xp remix
-    'https://www.youtube.com/watch?v=bKf9_gF5h5I',
-    # aint nobody got time for that
-    'https://www.youtube.com/watch?v=Kp9soHooisk',
     # yodelling
     'https://www.youtube.com/watch?v=Lxt0_YrQs0M',
     # whistling mullet guy
     'https://www.youtube.com/watch?v=Sbhoym9yzVQ',
     # screaming guy
     'https://www.youtube.com/watch?v=CRcYlE3i_-4',
-    # diggy diggy hole
-    'https://www.youtube.com/watch?v=ov5pxaIbJlM',
     # awesome face song
     'https://www.youtube.com/watch?v=WNeni1lbzgY',
     # screaming sheep
     'https://www.youtube.com/watch?v=SjHUb7NSrNk',
     # epic sax guy
-    'https://www.youtube.com/watch?v=kxopViU98Xo'
+    'https://www.youtube.com/watch?v=kxopViU98Xo',
+    # crab rave
+    'https://www.youtube.com/watch?v=-50NdPawLVY',
+    # wii theme music
+    'https://www.youtube.com/watch?v=Twi92KYddW4',
+    # nyan cat
+    'https://www.youtube.com/watch?v=wZZ7oFKsKzY'
 ]
 
 # check if any settings vars have been included to add to the
