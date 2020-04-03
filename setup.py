@@ -28,6 +28,7 @@ setup(
     description='Redirecting bots to utilize their time better...',
     packages=find_packages(exclude=('tests*',)),
     long_description=long_description,
+    long_description_content_type='text/markdown',
     keywords='django spam',
     zip_safe=False,
     include_package_data=True,
