@@ -57,7 +57,7 @@ SPAM_URLS = [
     'https://www.youtube.com/watch?v=kxopViU98Xo',
     # crab rave
     'https://www.youtube.com/watch?v=-50NdPawLVY',
-    # wii theme music,
+    # wii theme music
     'https://www.youtube.com/watch?v=Twi92KYddW4',
     # nyan cat
     'https://www.youtube.com/watch?v=wZZ7oFKsKzY'
