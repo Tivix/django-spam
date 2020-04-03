@@ -21,7 +21,7 @@ f.close()
 
 setup(
     name='django_spam',
-    version='0.3.2',
+    version='0.4.0',
     author='Nick Kelly',
     author_email='nick.kelly@tivix.com',
     url='http://github.com/Tivix/django-spam',
@@ -42,6 +42,8 @@ setup(
         'Framework :: Django :: 1.9',
         'Framework :: Django :: 1.10',
         'Framework :: Django :: 2.0',
+        'Framework :: Django :: 2.1',
+        'Framework :: Django :: 2.2',
         'Intended Audience :: Developers',
         'Intended Audience :: System Administrators',
         'Operating System :: OS Independent',
