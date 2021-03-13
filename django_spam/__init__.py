@@ -60,7 +60,11 @@ SPAM_URLS = [
     # wii theme music
     'https://www.youtube.com/watch?v=Twi92KYddW4',
     # nyan cat
-    'https://www.youtube.com/watch?v=wZZ7oFKsKzY'
+    'https://www.youtube.com/watch?v=wZZ7oFKsKzY',
+    # ASMR
+    "https://www.youtube.com/watch?v=jbAy9MwBR-I",
+    # he-man heyeayea
+    "https://www.youtube.com/watch?v=eh7lp9umG2I"
 ]
 
 # check if any settings vars have been included to add to the
