@@ -11,7 +11,7 @@ spam_url = random.choice(SPAM_URLS)
 
 urlpatterns = [
     path(
-        f"{spam_route}",
+        spam_route,
         RedirectView.as_view(url=spam_url.url),
         name=spam_url.to_readable(),
     )
