@@ -1,4 +1,3 @@
-from typing import Optional
 
 
 class Colour(object):
@@ -18,7 +17,7 @@ class Colour(object):
         raise NotImplementedError
 
     @classmethod
-    def text(cls, txt: str, status: Optional[str] = None) -> str:
+    def text(cls, txt: str, status: str = None) -> str:
         """colorize specific text
 
         :param txt:                     text printed to console
