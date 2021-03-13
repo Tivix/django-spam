@@ -7,7 +7,9 @@ django-spam
 <a href="https://github.com/Tivix/django-spam/releases"><img alt="Release Status" src="https://img.shields.io/github/v/release/Tivix/django-spam"></a>
 </p>
 
-![alt text](https://media.giphy.com/media/Mr8Gr9ejR0OpW/giphy.gif "django_spam")
+<p align="center">
+<a href="https://media.giphy.com/media/Mr8Gr9ejR0OpW/giphy.gif"><img alt="spam" src="https://media.giphy.com/media/Mr8Gr9ejR0OpW/giphy.gif"></a>
+</p>
 
 Inspired by this Nick Craver tweet https://twitter.com/nick_craver/status/720062942960623616
 
@@ -69,7 +71,7 @@ Include ``django_spam.urls`` to root url file:
 ```python
 
 '...'
-url(r'', include('django_spam.urls')),  # for Django >= 2.0: path('', include('django_spam.urls')),
+path('', include('django_spam.urls')),
 '...',
 ```
 
