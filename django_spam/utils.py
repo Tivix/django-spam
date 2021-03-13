@@ -1,4 +1,4 @@
-# utils.py
+from typing import Optional
 
 
 class Colour(object):
@@ -18,15 +18,13 @@ class Colour(object):
         raise NotImplementedError
 
     @classmethod
-    def text(cls, txt, status=None):
-        """
-        Colorize specific text
+    def text(cls, txt: str, status: Optional[str] = None) -> str:
+        """colorize specific text
 
-        @txt:       text printed to console
-        @status:    the type of status depends on the color
+        :param txt:                     text printed to console
+        :param status:                  the type of status depends on the color
 
-        returns:
-            colorized text string
+        :return:                        colorized text string
         """
         if status == 'fail':
             return cls.FAIL + txt + cls.ENDC
