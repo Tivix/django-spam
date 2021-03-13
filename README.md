@@ -1,5 +1,11 @@
-django_spam
+django-spam
 ===========
+
+<p align="center">
+<a href="https://travis-ci.org/nickatnight/django-spam"><img alt="Build Status" src="https://travis-ci.org/nickatnight/django-spam.svg?branch=master"></a>
+<a href="https://coveralls.io/github/nickatnight/django-spam?branch=master"><img alt="Coverage Status" src="https://coveralls.io/repos/github/nickatnight/django-spam/badge.svg?branch=master"></a>
+<a href="https://github.com/Tivix/django-spam/releases"><img alt="Release Status" src="https://img.shields.io/github/v/release/Tivix/django-spam"></a>
+</p>
 
 ![alt text](https://media.giphy.com/media/Mr8Gr9ejR0OpW/giphy.gif "django_spam")
 
@@ -10,17 +16,15 @@ solution for your django application. django_spam simply adds common admin urls 
 for that matter) try and access them, they will get redirected...
 
 
-[![Build Status](https://travis-ci.org/nickatnight/django-spam.svg?branch=master)](https://travis-ci.org/nickatnight/django-spam)
-[![Coverage Status](https://coveralls.io/repos/github/nickatnight/django-spam/badge.svg?branch=master)](https://coveralls.io/github/nickatnight/django-spam?branch=master)
+|            | Django 2.0         | Django 2.1         | Django 2.2         | Django 3.0         | Django 3.1         |
+| --         | --                 | --                 | --                 | --                 | --                 |
+| Python 3.4 | :heavy_check_mark: |                    |                    |                    |                    |
+| Python 3.5 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
+| Python 3.6 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.7 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.8 |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.9 |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: |
 
-
-|            | Django 1.8         | Django 1.9         | Django 1.10        | Django 1.11        | Django 2.0         | Django 2.1         | Django 2.2         |
-| --         | --                 | --                 | --                 | --                 | --                 | --                 | --                 |
-| Python 2.7 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |                    |
-| Python 3.4 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
-| Python 3.5 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Python 3.6 |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Python 3.7 |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 To install:
 ```python

@@ -19,7 +19,7 @@ var/
 .installed.cfg
 *.egg
 demo/django_spam
-
+.vscode
 *.sqlite3
 
 # Installer logs
