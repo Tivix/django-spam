@@ -8,7 +8,7 @@ on:
 
 jobs:
   lint-and-test:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
     strategy:
       # By default, GitHub will maximize the number of jobs run in parallel
       # depending on the available runners on GitHub-hosted virtual machines.
@@ -89,9 +89,12 @@ jobs:
         run: |
           python -m pip install coverage
           coverage run --source=django_spam setup.py test
-    
-      - name: Coveralls
+          coverage report
+          coverage xml -o coverage.xml
+
+      - name: Codecov
         if: success()
-        uses: coverallsapp/github-action@master
+        uses: codecov/codecov-action@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          file: coverage.xml
+          flags: unittests
