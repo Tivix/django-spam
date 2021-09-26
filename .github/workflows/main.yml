@@ -38,7 +38,7 @@ jobs:
           - python-version: "3.4"
             django-version: "3.0"
           - python-version: "3.4"
-            django-version: "3.2"
+            django-version: "3.1"
           - python-version: "3.4"
             django-version: "3.2"
           # Python 3.5 is not compatible with Django 2.2+
@@ -64,6 +64,7 @@ jobs:
             django-version: "3.0"
 
     steps:
+      env: GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/checkout@v2
 
       - name: Set up Python ${{ matrix.python-version }}
@@ -90,5 +91,7 @@ jobs:
           coverage run --source=django_spam setup.py test
       - name: output coveralls
         if: success()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           coveralls
