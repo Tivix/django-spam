@@ -7,7 +7,9 @@ django-spam
 <a href="https://github.com/Tivix/django-spam/releases"><img alt="Release Status" src="https://img.shields.io/github/v/release/Tivix/django-spam"></a>
 </p>
 
-![alt text](https://media.giphy.com/media/Mr8Gr9ejR0OpW/giphy.gif "django_spam")
+<p align="center">
+<a href="https://media.giphy.com/media/Mr8Gr9ejR0OpW/giphy.gif"><img alt="spam" src="https://media.giphy.com/media/Mr8Gr9ejR0OpW/giphy.gif"></a>
+</p>
 
 Inspired by this Nick Craver tweet https://twitter.com/nick_craver/status/720062942960623616
 
@@ -16,14 +18,14 @@ solution for your django application. django_spam simply adds common admin urls 
 for that matter) try and access them, they will get redirected...
 
 
-|            | Django 2.0         | Django 2.1         | Django 2.2         | Django 3.0         | Django 3.1         |
-| --         | --                 | --                 | --                 | --                 | --                 |
-| Python 3.4 | :heavy_check_mark: |                    |                    |                    |                    |
-| Python 3.5 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
-| Python 3.6 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Python 3.7 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Python 3.8 |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Python 3.9 |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: |
+|            | Django 2.0         | Django 2.1         | Django 2.2         | Django 3.0         | Django 3.1         | Django 3.2         |
+| --         | --                 | --                 | --                 | --                 | --                 | --                 |
+| Python 3.4 | :heavy_check_mark: |                    |                    |                    |                    |                    |
+| Python 3.5 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |                    |
+| Python 3.6 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.7 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.8 |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.9 |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 
 To install:
@@ -53,23 +55,11 @@ SPAM_ROUTES = [
 ]
 ```
 
-The same goes for ``SPAM_URLS`` you would like traffic to get forwarded to. Add some fun urls:
-
-```python
-SPAM_URLS = [
-    # 10 hours of Donald Trump saying bing bing bong
-    'https://www.youtube.com/watch?v=UKbOqEk6rsk',
-    # 10 hours of Darth Vader breathing
-    'https://www.youtube.com/watch?v=un8FAjXWOBY',
-    '...',
-]
-```
-
 Include ``django_spam.urls`` to root url file:
 ```python
 
 '...'
-url(r'', include('django_spam.urls')),  # for Django >= 2.0: path('', include('django_spam.urls')),
+path('', include('django_spam.urls')),
 '...',
 ```
 

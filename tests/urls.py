@@ -1,8 +1,8 @@
-from django.conf.urls import url, include
+from django.urls import path, include
 from django.http import HttpResponse
 
 
 urlpatterns = [
-    url(r'', include('django_spam.urls')),
-    url(r'index.php$', lambda request: HttpResponse('Hello World!')),
+    path("", include("django_spam.urls")),
+    path("index.php", lambda request: HttpResponse("Hello World!")),
 ]
