@@ -23,10 +23,6 @@ SECRET_KEY = "fake-key"
 
 ROOT_URLCONF = "tests.urls"
 
-SPAM_URLS = [
-    "https://www.youtube.com/watch?v=ov5pxaIbJlM",
-]
-
 SPAM_ROUTES = [
     "testadmin.php",
 ]

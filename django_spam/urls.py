@@ -4,10 +4,11 @@ from django.conf import settings
 from django.urls import path
 from django.views.generic.base import RedirectView
 
-from django_spam import SPAM_ROUTES, SPAM_URLS
+from django_spam import SPAM_ROUTES
+from django_spam import SPAM_ENUMS
 
 
-spam_url = random.choice(SPAM_URLS)
+spam_url = random.choice(SPAM_ENUMS)
 
 urlpatterns = [
     path(
