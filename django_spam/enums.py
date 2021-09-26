@@ -1,6 +1,6 @@
 class SpamBase:
-    name = None
-    url = None
+    name = ""
+    url = ""
 
     def __init__(self):
         raise NotImplementedError

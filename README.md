@@ -18,14 +18,14 @@ solution for your django application. django_spam simply adds common admin urls 
 for that matter) try and access them, they will get redirected...
 
 
-|            | Django 2.0         | Django 2.1         | Django 2.2         | Django 3.0         | Django 3.1         |
-| --         | --                 | --                 | --                 | --                 | --                 |
-| Python 3.4 | :heavy_check_mark: |                    |                    |                    |                    |
-| Python 3.5 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
-| Python 3.6 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Python 3.7 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Python 3.8 |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Python 3.9 |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: |
+|            | Django 2.0         | Django 2.1         | Django 2.2         | Django 3.0         | Django 3.1         | Django 3.2         |
+| --         | --                 | --                 | --                 | --                 | --                 | --                 |
+| Python 3.4 | :heavy_check_mark: |                    |                    |                    |                    |                    |
+| Python 3.5 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |                    |
+| Python 3.6 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.7 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.8 |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.9 |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 
 To install:
@@ -51,18 +51,6 @@ SPAM_ROUTES = [
     'admin/login.php',
     'administrator/index.php',
     'index.php',
-    '...',
-]
-```
-
-The same goes for ``SPAM_URLS`` you would like traffic to get forwarded to. Add some fun urls:
-
-```python
-SPAM_URLS = [
-    # 10 hours of Donald Trump saying bing bing bong
-    'https://www.youtube.com/watch?v=UKbOqEk6rsk',
-    # 10 hours of Darth Vader breathing
-    'https://www.youtube.com/watch?v=un8FAjXWOBY',
     '...',
 ]
 ```

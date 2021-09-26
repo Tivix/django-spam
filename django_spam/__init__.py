@@ -63,6 +63,6 @@ if hasattr(settings, "EXCLUDED_ROUTES"):
                 )
             )
 
-
-if hasattr(settings, "SPAM_URLS"):
-    SPAM_URLS += settings.SPAM_URLS
+# NOTE: temp disbaling custom routes
+# if hasattr(settings, "SPAM_URLS"):
+#     SPAM_URLS += settings.SPAM_URLS
