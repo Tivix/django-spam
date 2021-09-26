@@ -87,7 +87,7 @@ jobs:
 
       - name: run tests
         run: |
-          pip -m install coverage
+          python -m pip install coverage
           coverage run --source=django_spam setup.py test
     
       - name: Coveralls
