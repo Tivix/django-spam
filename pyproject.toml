@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-spam"
-version = "1.0.0"
+version = "2.0.0"
 description = "Django application that redirects spam bots to '10 hours of' videos"
 authors = ["Nick Kelly <nickkelly.858@gmail.com>"]
 
