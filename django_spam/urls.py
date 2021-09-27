@@ -7,13 +7,14 @@ from django_spam import SPAM_ROUTES
 from django_spam import SPAM_ENUMS
 
 
-spam_url = random.choice(SPAM_ENUMS)
+urlpatterns = list()
 
-urlpatterns = [
-    path(
-        spam_route,
-        RedirectView.as_view(url=spam_url.url),
-        name=spam_url.to_readable(),
+for spam_route in SPAM_ROUTES:
+    enum = random.choice(SPAM_ENUMS)
+    urlpatterns.append(
+        path(
+            spam_route,
+            RedirectView.as_view(url=enum.url),
+            name=enum.to_readable(),
+        )
     )
-    for spam_route in SPAM_ROUTES
-]

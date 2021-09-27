@@ -33,7 +33,7 @@ description = "Django application that redirects spam bots to '10 hours of' vide
 category = "main"
 optional = false
 python-versions = "^3.9"
-develop = false
+develop = true
 
 [package.source]
 type = "directory"
@@ -58,7 +58,7 @@ python-versions = ">=3.5"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9"
-content-hash = "ddf44ade2d92fe1927e8066515e0859444d88bb1bcccd7afa91ee3810a471c45"
+content-hash = "3465f4fa47d1362bce3242be6e480ae22de47be7239ae7cb7670dd931b0f7006"
 
 [metadata.files]
 asgiref = [

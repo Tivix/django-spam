@@ -8,7 +8,7 @@ authors = ["nick.kelly@tivix.com"]
 [tool.poetry.dependencies]
 python = "3.9"
 django = "^3.0"
-django_spam = { path="../"}
+django_spam = { path = "../", develop = true}
 
 [tool.poetry.dev-dependencies]
 
