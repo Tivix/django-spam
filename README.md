@@ -2,8 +2,8 @@ django-spam
 ===========
 
 <p align="center">
-<a href="https://github.com/nickatnight/django-spam"><img alt="Build Status" src="https://github.com/nickatnight/django-spam/workflows/lint%20and%20test/badge.svg?branch=master"></a>
-<a href="https://codecov.io/gh/nickatnight/django-spam"><img alt="Actions Status" src="https://codecov.io/gh/nickatnight/django-spam/branch/master/graph/badge.svg"></a>
+<a href="https://github.com/Tivix/django-spam"><img alt="Build Status" src="https://github.com/Tivix/django-spam/workflows/lint%20and%20test/badge.svg?branch=master"></a>
+<a href="https://codecov.io/gh/Tivix/django-spam"><img alt="Actions Status" src="https://codecov.io/gh/Tivix/django-spam/branch/master/graph/badge.svg"></a>
 <a href="https://github.com/Tivix/django-spam/releases"><img alt="Release Status" src="https://img.shields.io/github/v/release/Tivix/django-spam"></a>
 </p>
 
