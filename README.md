@@ -28,7 +28,7 @@ for that matter) try and access them, they will get redirected...
 | Python 3.9 |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 
-To install:
+## Installation / Usage
 ```python
 pip install django-spam
 ```
@@ -72,4 +72,8 @@ EXCLUDED_ROUTES = [
 ]
 ```
 
-@Tivix
+## Demo
+See [here](demo/README.md)
+
+## Development
+TODO
