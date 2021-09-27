@@ -1,14 +1,10 @@
-from django.conf.urls import url, include
+from django.urls import path, include
 from django.contrib import admin
-
-
-try:
-    from django.urls import re_path as url  # Django >= 2.0
-except ImportError:
-    from django.conf.urls import url     # Django < 2.0
+from django.views.generic import TemplateView
 
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'', include('django_spam.urls')),
+    path("admin/", admin.site.urls),
+    path("", TemplateView.as_view(template_name="default_urlconf.html")),
+    path("", include("django_spam.urls")),
 ]

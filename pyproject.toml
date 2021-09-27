@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "django-spam"
+version = "2.0.0"
+description = "Django application that redirects spam bots to '10 hours of' videos"
+authors = ["Nick Kelly <nickkelly.858@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.2"
+pytest-coverage = "^0.0"
+black = "20.8b1"
+
+[tool.black]
+line-length = 110
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | build
+  | dist
+)/
+'''
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

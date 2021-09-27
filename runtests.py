@@ -2,8 +2,8 @@
 import os
 import sys
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'tests.settings'
-test_dir = os.path.join(os.path.dirname(__file__), 'tests')
+os.environ["DJANGO_SETTINGS_MODULE"] = "tests.settings"
+test_dir = os.path.join(os.path.dirname(__file__), "tests")
 sys.path.insert(0, test_dir)
 
 import django
@@ -14,10 +14,11 @@ from django.conf import settings
 def runtests():
     TestRunner = get_runner(settings)
     test_runner = TestRunner(verbosity=1, interactive=True)
-    if hasattr(django, 'setup'):
+    if hasattr(django, "setup"):
         django.setup()
-    failures = test_runner.run_tests(['tests'])
+    failures = test_runner.run_tests(["tests"])
     sys.exit(bool(failures))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     runtests()
