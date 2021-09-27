@@ -76,4 +76,9 @@ EXCLUDED_ROUTES = [
 See [here](demo/README.md)
 
 ## Development
-TODO
+This project uses [Poetry](https://python-poetry.org/docs/#osx--linux--bashonwindows-install-instructions) to manage dev environment.  Once installed:
+1. Clone and `cd` into repo
+2. install packages with `poetry install`
+3. black `poetry run black .`
+4. flake8 `poetry run flake8`
+5. test `poetry run coverage run --source=django_spam setup.py test`
