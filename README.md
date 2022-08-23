@@ -18,14 +18,15 @@ solution for your django application. django_spam simply adds common admin urls 
 for that matter) try and access them, they will get redirected...
 
 
-|            | Django 2.0         | Django 2.1         | Django 2.2         | Django 3.0         | Django 3.1         | Django 3.2         |
+|            | Django 2.2         | Django 3.0         | Django 3.1         | Django 3.2         | Django 4.0         | Django 4.1         |
 | --         | --                 | --                 | --                 | --                 | --                 | --                 |
-| Python 3.4 | :heavy_check_mark: |                    |                    |                    |                    |                    |
-| Python 3.5 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |                    |
-| Python 3.6 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Python 3.7 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Python 3.8 |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Python 3.9 |                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.4 |                    |                    |                    |                    |                    |                    |
+| Python 3.5 | :heavy_check_mark: |                    |                    |                    |                    |                    |
+| Python 3.6 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
+| Python 3.7 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
+| Python 3.8 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.9 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Python 3.10|                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 
 To install:

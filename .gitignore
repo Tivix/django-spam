@@ -21,6 +21,7 @@ var/
 demo/django_spam
 .vscode
 *.sqlite3
+pyvenv.cfg
 
 # Installer logs
 pip-log.txt

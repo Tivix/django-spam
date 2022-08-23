@@ -22,9 +22,9 @@ f.close()
 
 setup(
     name="django_spam",
-    version="1.0.0",
+    version="3.0.0",
     author="Nick Kelly",
-    author_email="nick.kelly@tivix.com",
+    author_email="nickkelly.858@gmail.com",
     url="http://github.com/Tivix/django-spam",
     description="Redirecting bots to utilize their time better...",
     packages=find_packages(exclude=("tests*",)),
@@ -36,15 +36,16 @@ setup(
     py_modules=["django_spam"],
     test_suite="runtests.runtests",
     install_requires=[
-        "Django>=2.0.0",
+        "Django>=2.2.17",
     ],
     classifiers=[
         "Framework :: Django",
-        "Framework :: Django :: 2.0",
-        "Framework :: Django :: 2.1",
         "Framework :: Django :: 2.2",
         "Framework :: Django :: 3.0",
         "Framework :: Django :: 3.1",
+        "Framework :: Django :: 3.2",
+        "Framework :: Django :: 4.0",
+        "Framework :: Django :: 4.1",
         "Intended Audience :: Developers",
         "Intended Audience :: System Administrators",
         "Operating System :: OS Independent",
