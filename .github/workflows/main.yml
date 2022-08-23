@@ -42,6 +42,16 @@ jobs:
             django-version: "4.0"
           - python-version: "3.5"
             django-version: "4.1"
+          # Python 3.6 is not compatible with Django 4.0+
+          - python-version: "3.6"
+            django-version: "4.0"
+          - python-version: "3.6"
+            django-version: "4.1"
+          # Python 3.7 is not compatible with Django 4.0+
+          - python-version: "3.7"
+            django-version: "4.0"
+          - python-version: "3.7"
+            django-version: "4.1"
           # Python 3.10 is compatible with Django 3.2+
           - python-version: "3.10"
             django-version: "2.2"
