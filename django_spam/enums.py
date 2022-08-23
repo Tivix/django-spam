@@ -4,6 +4,9 @@ class AbstractSpam(abc.ABC):
     name: str = ""
     url: str = ""
 
+    def __init__(self):
+        raise NotImplementedError
+
     @classmethod
     def to_readable(cls) -> str:
         return cls.name.lower().replace(" ", "_")
