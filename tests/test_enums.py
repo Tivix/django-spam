@@ -1,6 +1,5 @@
 from django_spam.enums import AbstractSpam
 
-from django.conf import settings
 from django.test import TestCase
 
 

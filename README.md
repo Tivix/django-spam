@@ -2,8 +2,8 @@ django-spam
 ===========
 
 <p align="center">
-<a href="https://github.com/nickatnight/django-spam"><img alt="Build Status" src="https://github.com/nickatnight/django-spam/workflows/lint%20and%20test/badge.svg?branch=master"></a>
-<a href="https://codecov.io/gh/nickatnight/django-spam"><img alt="Actions Status" src="https://codecov.io/gh/nickatnight/django-spam/branch/master/graph/badge.svg"></a>
+<a href="https://github.com/Tivix/django-spam"><img alt="Build Status" src="https://github.com/Tivix/django-spam/workflows/lint%20and%20test/badge.svg?branch=master"></a>
+<a href="https://codecov.io/gh/Tivix/django-spam"><img alt="Actions Status" src="https://codecov.io/gh/Tivix/django-spam/branch/master/graph/badge.svg"></a>
 <a href="https://github.com/Tivix/django-spam/releases"><img alt="Release Status" src="https://img.shields.io/github/v/release/Tivix/django-spam"></a>
 </p>
 
@@ -20,7 +20,6 @@ for that matter) try and access them, they will get redirected...
 
 |            | Django 2.2         | Django 3.0         | Django 3.1         | Django 3.2         | Django 4.0         | Django 4.1         |
 | --         | --                 | --                 | --                 | --                 | --                 | --                 |
-| Python 3.4 |                    |                    |                    |                    |                    |                    |
 | Python 3.5 | :heavy_check_mark: |                    |                    |                    |                    |                    |
 | Python 3.6 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
 | Python 3.7 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
@@ -29,7 +28,7 @@ for that matter) try and access them, they will get redirected...
 | Python 3.10|                    |                    |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 
-To install:
+## Installation / Usage
 ```python
 pip install django-spam
 ```
@@ -73,4 +72,13 @@ EXCLUDED_ROUTES = [
 ]
 ```
 
-@Tivix
+## Demo
+See [here](demo/README.md)
+
+## Development
+This project uses [Poetry](https://python-poetry.org/docs/#osx--linux--bashonwindows-install-instructions) to manage dev environment.  Once installed:
+1. Clone and `cd` into repo
+2. install packages with `poetry install`
+3. black `poetry run black .`
+4. flake8 `poetry run flake8`
+5. test `poetry run coverage run --source=django_spam setup.py test`

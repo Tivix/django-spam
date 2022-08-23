@@ -56,9 +56,7 @@ if hasattr(settings, "EXCLUDED_ROUTES"):
         else:
             print(
                 Colour.text(
-                    'Warning: "'
-                    + route
-                    + '" is not included in django_spam.SPAM_ROUTES.',
+                    'Warning: "' + route + '" is not included in django_spam.SPAM_ROUTES.',
                     "warn",
                 )
             )

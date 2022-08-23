@@ -1,8 +1,11 @@
+from django.urls import path, include
 from django.contrib import admin
-from django.urls import include, re_path as url
+from django.views.generic import TemplateView
+
 
 
 urlpatterns = [
-    url(r"^admin/", admin.site.urls),
-    url(r"", include("django_spam.urls")),
+    path("admin/", admin.site.urls),
+    path("", TemplateView.as_view(template_name="default_urlconf.html")),
+    path("", include("django_spam.urls")),
 ]
