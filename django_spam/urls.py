@@ -17,7 +17,4 @@ def get_spam_path(route: str) -> path:
     return p
 
 
-urlpatterns = [
-    get_spam_path(spam_route)    
-    for spam_route in SPAM_ROUTES
-]
+urlpatterns = [get_spam_path(spam_route) for spam_route in SPAM_ROUTES]

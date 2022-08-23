@@ -1,6 +1,5 @@
 name: lint and test
 
-# trigger only on PRs to `main` branch
 on:
   pull_request:
     branches:

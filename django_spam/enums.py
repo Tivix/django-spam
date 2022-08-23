@@ -1,8 +1,9 @@
 import abc
 
+
 class AbstractSpam(abc.ABC):
-    name: str = ""
-    url: str = ""
+    name = ""
+    url = ""
 
     def __init__(self):
         raise NotImplementedError
