@@ -1,4 +1,7 @@
-class SpamBase:
+import abc
+
+
+class AbstractSpam(abc.ABC):
     name = ""
     url = ""
 
@@ -10,69 +13,69 @@ class SpamBase:
         return cls.name.lower().replace(" ", "_")
 
 
-class VaderBreathing(SpamBase):
+class VaderBreathing(AbstractSpam):
     name = "Darth Vader Breathing"
     url = "https://www.youtube.com/watch?v=un8FAjXWOBY"
 
 
-class Yodelling(SpamBase):
-    name = "Yodelling"
-    url = "https://www.youtube.com/watch?v=Lxt0_YrQs0M"
+class BouncingDVDLogo(AbstractSpam):
+    name = "Bouncing DVD Logo"
+    url = "https://www.youtube.com/watch?v=5mGuCdlCcNM"
 
 
-class MulletGuy(SpamBase):
+class MulletGuy(AbstractSpam):
     name = "Whistling Mullet Guy"
     url = "https://www.youtube.com/watch?v=Sbhoym9yzVQ"
 
 
-class ScreamingGuy(SpamBase):
+class ScreamingGuy(AbstractSpam):
     name = "Screaming Guy"
     url = "https://www.youtube.com/watch?v=CRcYlE3i_-4"
 
 
-class FaceSong(SpamBase):
+class FaceSong(AbstractSpam):
     name = "Awesome Face Song"
     url = "https://www.youtube.com/watch?v=WNeni1lbzgY"
 
 
-class ScreamingSheep(SpamBase):
+class ScreamingSheep(AbstractSpam):
     name = "Screaming Sheep"
     url = "https://www.youtube.com/watch?v=SjHUb7NSrNk"
 
 
-class SaxGuy(SpamBase):
+class SaxGuy(AbstractSpam):
     name = "Epic Sax Guy"
     url = "https://www.youtube.com/watch?v=kxopViU98Xo"
 
 
-class CrabRave(SpamBase):
+class CrabRave(AbstractSpam):
     name = "Crab Rave"
     url = "https://www.youtube.com/watch?v=-50NdPawLVY"
 
 
-class WiiMusic(SpamBase):
+class WiiMusic(AbstractSpam):
     name = "Wii Theme Music"
     url = "https://www.youtube.com/watch?v=Twi92KYddW4"
 
 
-class NyonCat(SpamBase):
-    name = "Nyon Cat"
-    url = "https://www.youtube.com/watch?v=wZZ7oFKsKzY"
+class Nothing(AbstractSpam):
+    name = "Nothing"
+    url = "https://www.youtube.com/watch?v=fx2Z5ZD_Rbo"
 
 
-class Asmr(SpamBase):
+class Asmr(AbstractSpam):
     name = "ASMR"
     url = "https://www.youtube.com/watch?v=jbAy9MwBR-I"
 
 
-class HeMan(SpamBase):
-    name = "He-man Heyeayea"
-    url = "https://www.youtube.com/watch?v=eh7lp9umG2I"
+class JoePera(AbstractSpam):
+    name = "Joe Pera Talks You To Sleep"
+    url = "https://www.youtube.com/watch?v=91wX0NRjJqg"
 
 
 SPAM_ENUMS = [
     VaderBreathing,
-    Yodelling,
+    Nothing,
     MulletGuy,
     ScreamingGuy,
     FaceSong,
@@ -80,7 +83,7 @@ SPAM_ENUMS = [
     SaxGuy,
     CrabRave,
     WiiMusic,
-    NyonCat,
+    BouncingDVDLogo,
     Asmr,
-    HeMan,
+    JoePera,
 ]

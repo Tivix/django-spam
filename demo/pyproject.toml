@@ -3,10 +3,10 @@
 name = "django-spam demo"
 version = "1.0.0"
 description = "A demo using django-spam."
-authors = ["nick.kelly@tivix.com"]
+authors = ["nickkelly.858@gmail.com"]
 
 [tool.poetry.dependencies]
-python = "3.9"
+python = "^3.9"
 django = "^3.0"
 django_spam = { path = "../", develop = true}
 
