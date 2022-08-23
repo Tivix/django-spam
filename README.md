@@ -82,3 +82,10 @@ This project uses [Poetry](https://python-poetry.org/docs/#osx--linux--bashonwin
 3. black `poetry run black .`
 4. flake8 `poetry run flake8`
 5. test `poetry run coverage run --source=django_spam setup.py test`
+
+## Releasing
+1. Be sure to checkout master: `$ git checkout master`
+2. Create tag: `$ git tag <tag_name>`
+3. Push tag: `$ git push origin <tag_name>`
+
+GitHub Action pipeline will automatically create release c:
